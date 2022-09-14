@@ -34,7 +34,6 @@ header{
     border-radius: 16px;
 }
 
-
 nav{
     display: flex;
     flex-direction: row;
@@ -70,16 +69,21 @@ nav ul a:hover{
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
 }
 
 aside{
-    flex: 30%;
+    flex: 12%;
+    text-align: justify;
     background-color: beige;
     padding: 16px 21px;
 }
 
+
+
 section{
     flex: 70%;
+    flex-wrap: nowrap;
     padding: 16px 21px;
 }
 
