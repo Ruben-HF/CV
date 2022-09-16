@@ -10,7 +10,6 @@ body{
 
 header{
     display: flex;
-
     color: white;
     background-color: #333;
     justify-content: space-between;
@@ -65,11 +64,16 @@ nav ul a:hover{
     border-radius: 16px;
 }
 
+.a{
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+}
+
 
 .row{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex-wrap: nowrap;
 }
 
 aside{
@@ -79,12 +83,64 @@ aside{
     padding: 16px 21px;
 }
 
-
-
 section{
-    flex: 70%;
+    flex: 50%;
+    padding: 16px 0px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+div{
+    flex: 88%;
+    padding: 16px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    text-align: justify;
+}
+
+.ExperienciaLaboral{
+    background-color: aqua;
+}
+
+.Exp{
+    display: flex;
+    flex:100%;
     flex-wrap: nowrap;
-    padding: 16px 21px;
+    background-color: blanchedalmond;
+}
+
+.contenedor1{
+    display: block;
+    flex-wrap: wrap;
+    background-color: beige;
+}
+.contenedor2{
+    display: block;
+    flex-wrap: wrap;
+    background-color: chocolate;
+}
+.contenedor3{
+    display: block;
+    flex-wrap: wrap;
+    background-color: orange;
+}
+
+.empresa{
+    font-size: 14px;
+    text-align: left;
+}
+
+.puesto{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+
+.descripción{
+    font-size: 13px;
 }
 
 footer{
@@ -94,23 +150,21 @@ footer{
     background-color:  rgba(233, 233, 233, 0.801);
 }
 
-.a{
-    color: black;
-    padding: 3px;
-    text-decoration: none;
-}
-
 .AFXS{
     font-size: .8em;
     color: rgb(68, 67, 67);
 }
 
+.OP{
+    padding: 3px 21px;
+    text-align: justify;
+}
 
 @media (max-width: 700px) {
     header{
         flex-direction: column;
     }
-
+    
     nav ul a{
         color: white;
         justify-content: space-between;
@@ -119,7 +173,7 @@ footer{
         transition: all 0.4s linear;
         border-radius: 16px;
     }
-
+    
     .menu{
         display: block;
         cursor: pointer;
@@ -128,12 +182,18 @@ footer{
         transition: all 0.4s linear;
         border-radius: 16px;
     }
-
+    
     nav ul{
         display: none;
     }
-
+    
     nav ul.show{
         display: block;
     }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+
